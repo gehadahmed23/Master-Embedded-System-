@@ -5,15 +5,14 @@
  *      Author: Dell
  */
 
+
 #include "stdio.h"
 
 void main()
 {
-	int x;
+	float x;
 	printf("Enter a numbers: ");
 	fflush(stdout); fflush(stdin);
-	scanf("%d", &x);
-	(x % 2)?printf("%d is odd", x):printf("%d is even", x);
+	scanf("%f", &x);
+	(x > 0)?printf("%f is Positive", x):(x < 0)?printf("%f is negative", x):printf("you entered zero");
 }
-
-
