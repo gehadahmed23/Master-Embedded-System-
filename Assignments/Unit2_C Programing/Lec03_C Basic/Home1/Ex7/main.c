@@ -13,13 +13,11 @@ void main()
 	printf("Enter a number x: ");
 	fflush(stdout); fflush(stdin);
 	scanf("%f", &x);
-	fflush(stdout); fflush(stdin);
 	printf("Enter a number y: ");
 	fflush(stdout); fflush(stdin);
 	scanf("%f", &y);
-	fflush(stdout); fflush(stdin);
 	x += y;
 	y = x - y;
 	x -= y;
-	printf("After swapping, value of x = %f\nAfter swapping, value of y = %f", x, y);
+	printf("After swapping, value of x = %.2f\nAfter swapping, value of y = %.2f", x, y);
 }
